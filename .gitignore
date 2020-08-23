@@ -17,6 +17,27 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+
+venv/
+
+.idea/
+
+coverage_report/
+
+__pycache__/
+
+*.pyc
+
+tests/.DS_Store
+
+.DS_Store
+
+.coverage
+
+public/
+
+
 # =========================
 # Operating System Files
 # =========================
