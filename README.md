@@ -5,10 +5,7 @@ genderBR
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/genderBR)](https://cran.r-project.org/package=genderBR)
 [![Travis-CI Build
-Status](https://travis-ci.org/meirelesff/genderBR.svg?branch=master)](https://travis-ci.org/meirelesff/genderBR)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/meirelesff/genderBR?branch=master&svg=true)](https://ci.appveyor.com/project/meirelesff/genderBR)
-[![Package-License](https://img.shields.io/badge/License-GPL-brightgreen.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
+Status](https://travis-ci.org/guilhermecgs/genderbr.svg?branch=master)](https://travis-ci.org/guilhermecgs/genderbr)
 
 `genderBR` predicts gender from Brazilian first names using data from
 the Instituto Brasileiro de Geografia e Estatistica’s 2010 Census.
