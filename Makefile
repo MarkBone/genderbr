@@ -1,7 +1,25 @@
 PYTHONCMD=python
 
+# Compila os arquivos python (apenas para verificação)
+compile: deps
+	${PYTHONCMD} -m compileall ./
+
+
+# Executa todos os testes
+tests: deps unit-tests integration-tests
+
+# Executa os testes unitarios
+unit-tests: devdeps delete-coverage-report
+	${PYTHONCMD} -m pytest --cov=src --cov-fail-under=90 --cov-report xml:coverage-reports/coverage-report.xml tests/unit
+
+delete-coverage-report:
+	rm -rf coverage-reports/
+
+integration-tests: devdeps
+	${PYTHONCMD} -m pytest tests/integration
+
 deps:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 freeze:
     pip freeze > requirements.txt
