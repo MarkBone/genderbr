@@ -66,3 +66,5 @@ public/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+coverage-reports/coverage-report.xml
