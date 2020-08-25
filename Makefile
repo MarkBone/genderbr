@@ -23,3 +23,9 @@ deps:
 
 freeze:
 	pip freeze > requirements.txt
+
+publish: build_lib
+	twine upload dist/* -u ${TWINE_USERNAME} -p ${TWINE_PASSWORD}
+
+build_lib:
+	python setup.py sdist

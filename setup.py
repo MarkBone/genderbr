@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup_args = dict(
     name='genderbr',
-    version='0.0.1',
+    version='0.0.3',
     description='Predict gender from Brazilian first names',
     long_description='A method to predict and report gender from Brazilian first names using the Brazilian '
                      'Institute of Geography and Statistics Census data.',
