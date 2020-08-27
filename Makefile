@@ -28,4 +28,5 @@ publish: build_lib
 	twine upload dist/* -u ${TWINE_USERNAME} -p ${TWINE_PASSWORD}
 
 build_lib:
+	rm -rf dist/
 	python setup.py sdist
