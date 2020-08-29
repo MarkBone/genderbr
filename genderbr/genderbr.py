@@ -16,4 +16,7 @@ def get_gender(nome):
     else:
         sum_freq_m = 0
 
-    return 'F' if sum_freq_f > sum_freq_m else 'M'
+    if sum_freq_f > 0 or sum_freq_m > 0:
+        return 'F' if sum_freq_f > sum_freq_m else 'M'
+    else:
+        return None

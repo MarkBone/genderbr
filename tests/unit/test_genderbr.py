@@ -53,3 +53,18 @@ class TestGenderBr():
                       json=resposta_esperada_f, status=200)
 
         assert get_gender('guilherme') == 'F'
+
+
+    @responses.activate
+    def test_deve_retornar_resultado_none_nao_possuir_freq(self):
+        resposta_esperada_m = []
+
+        resposta_esperada_f = []
+
+        responses.add(responses.GET, 'http://servicodados.ibge.gov.br/api/v2/censos/nomes/guilherme?sexo=M',
+                      json=resposta_esperada_m, status=200)
+
+        responses.add(responses.GET, 'http://servicodados.ibge.gov.br/api/v2/censos/nomes/guilherme?sexo=F',
+                      json=resposta_esperada_f, status=200)
+
+        assert get_gender('guilherme') == None
